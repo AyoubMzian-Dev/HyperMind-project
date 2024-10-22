@@ -44,3 +44,12 @@ This web application is designed to help students track their lessons and practi
 
 ## Conclusion
 This plan provides a structured approach to building the web application, ensuring all features are implemented systematically and efficiently.
+
+
+
+
+
+
+
+
+@Codebase  i have web app useing next js, i have tow pages, the dashboard and the sbject page, th dashboard shows many sbjects, i want to make the link in the dashboard that get me to the subject page give an prop or the name or the id of the subject, so i can make the subject page shows me the content of the spisefec subject 

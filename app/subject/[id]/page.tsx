@@ -94,11 +94,15 @@ const lessonsData = {
 
 function SubjectPage() {
   const router = useRouter()
-  const { subjectId } = useParams()
+  const subjectId  = useParams()
+  console.log(useParams())
+
   const [completedLessons, setCompletedLessons] = useState<string[]>([])
 
-  const subject = subjects.find(s => s.id === subjectId) || subjects[0]
-  const lessons = lessonsData[subjectId as keyof typeof lessonsData] || []
+  const subject = subjects.find(subjecte => subjecte.id === subjectId.id)|| subjects[0]
+  
+  console.log(subject)
+  const lessons = lessonsData[subjectId.id as keyof typeof lessonsData] || []
 
   const handleLessonToggle = (lessonId: string) => {
     setCompletedLessons(prev =>
