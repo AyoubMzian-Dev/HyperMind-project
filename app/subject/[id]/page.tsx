@@ -14,13 +14,13 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { ArrowLeft, BookOpen, Calculator, Atom, Globe, Clock, BarChart, ChevronDown } from 'lucide-react'
-
-const subjects = [
-  { id: 'math', name: 'Mathematics', icon: Calculator, color: 'text-blue-500', progress: 30, totalLessons: 10 },
-  { id: 'science', name: 'Science', icon: Atom, color: 'text-green-500', progress: 50, totalLessons: 12 },
-  { id: 'literature', name: 'Literature', icon: BookOpen, color: 'text-yellow-500', progress: 20, totalLessons: 8 },
-  { id: 'geography', name: 'Geography', icon: Globe, color: 'text-purple-500', progress: 40, totalLessons: 6 },
-]
+import subjects from '@/lib/fakeData'
+// const subjects = [
+//   { id: 'math', name: 'Mathematics', icon: Calculator, color: 'text-blue-500', progress: 30, totalLessons: 10 },
+//   { id: 'science', name: 'Science', icon: Atom, color: 'text-green-500', progress: 50, totalLessons: 12 },
+//   { id: 'literature', name: 'Literature', icon: BookOpen, color: 'text-yellow-500', progress: 20, totalLessons: 8 },
+//   { id: 'geography', name: 'Geography', icon: Globe, color: 'text-purple-500', progress: 40, totalLessons: 6 },
+// ]
 
 const lessonsData = {
   math: [

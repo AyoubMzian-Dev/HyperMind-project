@@ -4,14 +4,15 @@ import React from 'react'
 import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
-import { BookOpen, Calculator, Atom, Globe, GraduationCap } from "lucide-react"
+import subjects from '@/lib/fakeData'
+ import {  GraduationCap } from "lucide-react"
 
-const subjects = [
-  { id: 'math', name: 'Mathematics', icon: Calculator, color: 'text-blue-500', progress: 30, totalLessons: 10 },
-  { id: 'science', name: 'Science', icon: Atom, color: 'text-green-500', progress: 40, totalLessons: 12 },
-  { id: 'literature', name: 'Literature', icon: BookOpen, color: 'text-yellow-500', progress: 20, totalLessons: 8 },
-  { id: 'geography', name: 'Geography', icon: Globe, color: 'text-purple-500', progress: 40, totalLessons: 6 },
-]
+// const subjects = [
+//   { id: 'math', name: 'Mathematics', icon: Calculator, color: 'text-blue-500', progress: 30, totalLessons: 10 },
+//   { id: 'science', name: 'Science', icon: Atom, color: 'text-green-500', progress: 40, totalLessons: 12 },
+//   { id: 'literature', name: 'Literature', icon: BookOpen, color: 'text-yellow-500', progress: 20, totalLessons: 8 },
+//   { id: 'geography', name: 'Geography', icon: Globe, color: 'text-purple-500', progress: 40, totalLessons: 6 },
+// ]
 
 function page() {
   const totalProgress = subjects.reduce((acc, subject) => acc + subject.progress, 0) / subjects.length
